@@ -1,0 +1,24 @@
+//
+   Created by alex on 07.07.14.
+
+extend base
+append title
+    | #{title}
+append scripts
+    script(src="/javascripts/chat.js")
+    script(src="/components/socket.io-client/socket.io.js")
+append content
+    div.jumbotron
+        div.row
+            div.col-md-10.chat-field
+            div.col-md-2.rooms-list
+                ul
+                    each room in rooms
+                        li
+                            a(href="#"+room.name)= room.name
+
+    div.input-group
+        input.form-control(type="text")#message-text
+        span.input-group-btn#send-message
+            button.btn.btn-default(type="button")
+                | Отправить

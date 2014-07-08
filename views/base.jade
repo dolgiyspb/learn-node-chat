@@ -1,0 +1,21 @@
+//
+   Created by alex on 24.06.14.
+doctype html
+html
+    head
+        title
+            block title
+        link(rel="stylesheet", href="/components/bootstrap/dist/css/bootstrap.css")
+        link(rel="stylesheet", href="/stylesheets/style.css")
+
+        block scripts
+            script(src="/components/jquery/dist/jquery.js")
+            script(src="/components/bootstrap/dist/js/bootstrap.js")
+    body
+        header
+            block header
+        section.container
+            include include/navbar
+            block content
+    footer
+        block footer

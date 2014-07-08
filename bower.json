@@ -1,0 +1,13 @@
+{
+  "name": "learn-js",
+  "version": "0.0.0",
+  "authors": [
+    "Dolgiy <dolgiyspb@gmail.com>"
+  ],
+  "dependencies" : {
+      "bootstrap" : "*",
+      "socket.io-client" : "*"
+  },
+  "license": "MIT",
+  "private": true
+}

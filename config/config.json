@@ -1,0 +1,17 @@
+{
+    "port" : 8080,
+    "session" : {
+      "secret" : "secret string"
+    },
+    "mongoose" : {
+        "uri" : "mongodb://localhost/chat",
+        "options" : {
+            "server" :{
+                "socketOptions" : {
+                    "keepAlive" : 1
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,10 @@
+//
+   Created by alex on 24.06.14.
+
+extends base
+append title
+    |error
+append content
+    h1= message
+    h2= error.status
+    pre= error.stack

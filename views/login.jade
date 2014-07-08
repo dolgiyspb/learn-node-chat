@@ -1,0 +1,22 @@
+//
+   Created by alex on 04.07.14.
+
+extends base
+append title
+    | #{title}
+append content
+    form.form-horizontal.login-form(action="/login", method="post")
+        for error in errors
+            div.alert.alert-danger.fade.in
+                | #{error}
+                button.close(type="button", data-dismiss="alert")
+                    | x
+
+        h2 Введите имя пользователя и пароль
+        div.center
+            input.shadows.center(type="text", placeholder="Имя пользователя", name="username")
+        div
+            input.shadows.center(type="password", placeholder="Пароль", name="password")
+        div
+            button.btn.btn-primary.center.btn-lg
+                | Войти

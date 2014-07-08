@@ -1,0 +1,16 @@
+//
+   Created by alex on 24.06.14.
+
+nav.navbar.navbar-default
+    div.collapse.navbar-collapse
+        a.navbar-brand(href="/")
+            | Главная
+        if user
+            div.navbar-right
+                p.navbar-text
+                    | Привет, #{user.username}
+                a.navbar-text.logout-button(href="/logout")
+                    | Выход
+        else
+            a.navbar-right.navbar-text(href="/login")
+                | Вход
